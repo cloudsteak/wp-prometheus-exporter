@@ -16,9 +16,10 @@ Ezáltal valós idejű betekintést kaphatsz a WordPress oldalad belső működ�
 
 - WordPress 6.7.2 vagy újabb
 - PHP 8.1 vagy újabb
-- Redis elérés (pl. Upstash vagy helyi Redis)
 - Prometheus telepítve a környezetedben
 - (opcionális) Grafana a metrikák vizualizálásához
+
+_Megjegyzés: Redis használata nem szükséges_
 
 ---
 
@@ -84,6 +85,6 @@ wp_user_count{role="administrator"}
 
 ---
 
-## 📃 Licenc
+## 📃 Licensz
 
 MIT
