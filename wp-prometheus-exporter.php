@@ -3,7 +3,7 @@
 Plugin Name: WP Prometheus Exporter
 Plugin URI: https://github.com/cloudmentor/wp-prometheus-exporter
 Description: WordPress Prometheus metrics exporter with configurable metrics and admin UI
-Version: 1.5.1
+Version: 1.5.2
 Author: CloudMentor
 Requires at least: 6.7.2
 Requires PHP: 8.1

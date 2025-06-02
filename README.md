@@ -1,6 +1,6 @@
 # WP Prometheus Exporter
 
-**Verzió:** 1.5.1  
+**Verzió:** 1.5.2  
 **Készítette:** [Cloud Mentor](https://cloudmentor.hu)  
 **GitHub:** [https://github.com/cloudsteak/wp-prometheus-exporter](https://github.com/cloudsteak/wp-prometheus-exporter)
 

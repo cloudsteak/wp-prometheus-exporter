@@ -15,11 +15,22 @@ function wp_prometheus_exporter_settings_page()
     ?>
     <div class="wrap">
 
-        <h1>WP Prometheus Exporter <small style='font-weight:normal;'>v1.5</small></h1>
+        <h1>WP Prometheus Exporter <small style='font-weight:normal;'>
+                <?php
+                if (!function_exists('get_plugin_data')) {
+                    require_once(ABSPATH . 'wp-admin/includes/plugin.php');
+                }
+                $plugin_file = plugin_dir_path(__FILE__) . 'wp-prometheus-exporter.php';
+                echo esc_html(get_plugin_data($plugin_file)['Version']);
+                ?>
+            </small></h1>
+
+
         <p><strong>Készítette:</strong> <a href='https://cloudmentor.hu' target='_blank'>Cloud Mentor</a></p>
         <p>Ez a plugin lehetővé teszi, hogy a <strong>WordPress</strong> oldalad statisztikai és teljesítmény adatait
             <strong>Prometheus</strong> kompatibilis formátumban exportáld. A metrikák vizualizálhatók
-            <strong>Grafana</strong> segítségével, így valós idejű betekintést kapsz a weboldalad működésébe.</p>
+            <strong>Grafana</strong> segítségével, így valós idejű betekintést kapsz a weboldalad működésébe.
+        </p>
 
         <form method="post" action="options.php">
             <?php settings_fields('wp_prometheus_exporter'); ?>
@@ -143,7 +154,15 @@ function wp_prometheus_exporter_settings_page()
 
         <p><strong>Készítette:</strong> <a href='https://cloudmentor.hu' target='_blank'>Cloud Mentor</a></p>
         <ul>
-            <li><strong>Verzió:</strong> 1.5</li>
+            <li><strong>Verzió:</strong>
+                <?php
+                if (!function_exists('get_plugin_data')) {
+                    require_once(ABSPATH . 'wp-admin/includes/plugin.php');
+                }
+                $plugin_file = plugin_dir_path(__FILE__) . 'wp-prometheus-exporter.php';
+                echo esc_html(get_plugin_data($plugin_file)['Version']);
+                ?>
+            </li>
             <li><strong>Weboldal:</strong> <a href='https://cloudmentor.hu' target='_blank'>https://cloudmentor.hu</a></li>
             <li><strong>GitHub:</strong> <a href='https://github.com/cloudsteak/wp-prometheus-exporter'
                     target='_blank'>https://github.com/cloudsteak/wp-prometheus-exporter</a></li>
