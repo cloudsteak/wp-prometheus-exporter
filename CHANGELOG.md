@@ -1,4 +1,4 @@
-## [1.5.2] - 2025-06-01
+## [1.5.2] - 2025-06-03
 
 ### Added
 - Admin interface with toggle switches for enabling/disabling individual metrics
